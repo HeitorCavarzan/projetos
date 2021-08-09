@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Projetinho pae.css" media="screen">
+    <title>Formulário</title>
+</head>
+<body>
+    <div> 
+        <h1 id="título">Cadastro para Peladão E-sports</h1>
+        <p id="subtítulo"> Complete o Formulário </p> 
+        <br>
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="nome" id="sobrenome" required>
+            </div>               
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label for="função"><strong>Em qual função voce joga?</strong></label>
+            <label>
+                <input type="radio" name="função" value="entryfragger" checked>EntryFragger
+            </label>
+            <label>
+                <input type="radio" name="função" value="riffler">Riffler
+             </label>
+             <label>
+                 <input type="radio" name="função" value="awper">Awper
+             </label>
+             <label>
+                 <input type="radio" name="função" value="lurker">Lurker
+             </label>
+             <label>
+                 <input type="radio" name="função" value="suport">Suport
+             </label>
+        </div>
+
+        <div class="campo">
+            <label>Você jogaria desprovido de vestimentas?</label>
+            <select id="jogarpelado">
+                <option selected disable value="">-ESCOLHA-</option>
+                <option>Sim</option>
+                <option>Não</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <br>
+            <label>Conte um pouco da sua experiência:</label>
+            <textarea row="6" style="width: 26em" od="experiência" name="experiência"></textarea>
+        </div>
+
+        <button class="botão" type="submit" onsubmit="">Enviar</button>
+    </form>
+</body>
+</html>
